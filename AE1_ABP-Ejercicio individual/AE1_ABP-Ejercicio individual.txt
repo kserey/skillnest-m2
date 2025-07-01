@@ -1,0 +1,32 @@
+1.¿Qué se entiende por desarrollo web?
+Es el proceso de crear sitios y aplicaciones que funcionan en navegadores web.
+Ejemplos: Gmail, YouTube, Trello, Mercado Libre.
+
+2.Diferencias entre Front-End, Back-End y Fullstack
+- Frontend: Parte visual e interactiva. Tecnologías: HTML, CSS, JavaScript, React.
+- Backend: Lógica del servidor y base de datos. Tecnologías: Node.js, Express, MongoDB.
+- Full Stack: Combina frontend y backend. Tecnologías: Las anteriores en conjunto.
+
+3.Qué es el Lenguaje de Marcación de Hipertexto (HTML)?
+Es el lenguaje que estructura el contenido de las páginas web.
+Define títulos, párrafos, enlaces, imágenes, formularios, etc.
+
+4.El rol del navegador
+Es un programa que interpreta y muestra contenido web.
+Lee HTML para estructurar, CSS para estilos y JavaScript para interactividad.
+
+5.¿Qué es la W3C?
+Es el organismo que define los estándares web.
+Asegura que los sitios funcionen correctamente en todos los navegadores y dispositivos.
+
+6.Evolución de HTML a HTML5
+HTML5 introdujo:
+Nuevas etiquetas semánticas (<header>, <section>, <article>)
+Soporte para video y audio sin plugins
+Formularios mejorados y APIs modernas (geolocalización, almacenamiento local)
+
+7.La tríada HTML, CSS y JavaScript
+HTML: Estructura el contenido (esqueleto).
+CSS: Aplica estilos visuales (apariencia).
+JavaScript: Agrega interactividad (comportamiento).
+Trabajan juntos para crear páginas modernas, atractivas y funcionales.

@@ -1,0 +1,12 @@
+body {
+  scroll-behavior: smooth;
+}
+
+#lista-libros .libro {
+  height: 100%;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}

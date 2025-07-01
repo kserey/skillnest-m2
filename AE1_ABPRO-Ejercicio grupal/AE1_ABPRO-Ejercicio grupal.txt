@@ -1,0 +1,53 @@
+1.¿Qué se entiende por desarrollo web?
+Es la creación de sitios o aplicaciones que funcionan en navegadores. Permite digitalizar procesos como el agendamiento de Recitronic y mejorar la gestión.
+
+2.¿Por qué una página web es una solución ideal para Recitronic?
+Permite centralizar las solicitudes de retiro, evitar errores, mostrar información clara y llevar un registro digital de los artículos reciclados.
+
+3.Diferencias entre Front-End, Back-End y Fullstack
+- Frontend: Parte visual del sitio. Tecnologías: HTML, CSS, JS, React. Para Recitronic: Formulario de solicitud, calendario, interfaz de usuario.
+- Backend: Lógica del servidor, manejo de datos. Tecnologías: Node.js, Express, MongoDB. Para Recitronic: Base de datos de clientes, agendamientos, historial.
+- Full Stack: Combina ambos roles. Para Recitronic: Desarrollador capaz de crear toda la plataforma.
+
+4.¿Qué es el Lenguaje de Marcación de Hipertexto (HTML)?
+Es el lenguaje que da estructura a una página web (títulos, párrafos, formularios).
+* En Recitronic: Usaríamos HTML para construir el formulario de solicitud de retiro, los botones de contacto y el menú de navegación.
+
+5. El rol del navegador
+El navegador interpreta el HTML (estructura), CSS (estilo) y JavaScript (funcionalidad).
+* En Recitronic: La elección de un navegador moderno garantiza que el formulario funcione bien, sea rápido y se vea correctamente.
+
+6. ¿Qué es la W3C?
+Organismo que define los estándares web. Asegura que la web de Recitronic sea compatible con todos los navegadores y accesible para todos los usuarios.
+
+7. Evolución de HTML hacia HTML5
+HTML5 trajo nuevas etiquetas semánticas, soporte para formularios avanzados, video/audio, y APIs modernas.
+* En Recitronic: Usaríamos formularios HTML5 con validación integrada para evitar errores de ingreso de datos.
+
+8. La tríada HTML, CSS y JavaScript
+- HTML: Estructura del sitio.
+- CSS: Estilos visuales.
+- JavaScript: Interactividad (validación de formularios, calendario dinámico).
+* En Recitronic:
+- HTML para los formularios
+- CSS para un diseño profesional
+- JS para que el cliente pueda seleccionar fechas y recibir confirmaciones automáticas
+
+9.El entorno de desarrollo: Visual Studio Code
+Permite escribir código organizado y eficiente.
+* En Recitronic: Ayuda a construir y mantener el sitio de forma ordenada.
+
+10.Utilizar el potencial de VS Code
+* Herramientas útiles:
+- Autocompletado
+- Vista previa en vivo
+- Control de versiones con Git
+- Extensiones útiles para Recitronic:
+- Live Server (vista rápida del sitio)
+- Prettier (formato limpio de código)
+- ESLint (detectar errores en JS)
+
+11.Conociendo el inspector de elementos
+Función: Permite ver y modificar el HTML/CSS en tiempo real en el navegador.
+* En Recitronic: Ayuda a corregir errores visuales, ajustar estilos o validar si el formulario está funcionando correctamente.
+

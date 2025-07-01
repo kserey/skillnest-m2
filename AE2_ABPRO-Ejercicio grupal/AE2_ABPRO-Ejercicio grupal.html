@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>FOODHERO</h1>
+        <nav>
+            <ul>
+                <li><a href="#working">¿Cómo funciona?</a></li>
+                <li><a href="#restaurants">Restaurantes</a></li>
+                <li><a href="#reservation">Reservar</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="working">
+            <h2>¿Como funciona?</h2>
+            <p>
+                FOODHERO conecta restaurantes con excedentes de comida con personas interesadas en adquirir alimentos a precios reducidos. Los restaurantes publican sus ofertas y los usuarios pueden reservar en línea y recoger en horarios definidos.
+            </p>
+            <ol>
+                <li>Explora las ofertas de los restaurantes.</li>
+                <li>Reserva tu comida favorita en línea.</li>
+                <li>Recógela en el horario indicado.</li>
+            </ol>
+
+        </section>
+
+        <section id="restaurants">
+            <h2>Restaurantes Asociados</h2>
+            <table>
+            <thead>
+                <tr>
+                <th>Nombre</th>
+                <th>Oferta</th>
+                <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>La Pizzería Feliz</td>
+                <td>2 porciones de pizza + bebida</td>
+                <td>$3.00</td>
+                </tr>
+
+                <tr>
+                <td>Comida China Express</td>
+                <td>Combo arroz + pollo agridulce</td>
+                <td>$4.50</td>
+                </tr>
+
+                <tr>
+                <td>Panadería Dulce Hogar</td>
+                <td>3 piezas de pan del día</td>
+                <td>$1.50</td>
+                </tr>
+            </tbody>
+            </table>
+
+        </section>
+
+        <section id="reservation">
+            <h2>Reservar Pedido</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+
+                <label for="restaurante">Selecciona un restaurante:</label>
+                <select id="restaurante" name="restaurante">
+                    <option value="" disabled selected>-- Selecciona --</option>
+                    <option value="1">La Pizzería Feliz</option>
+                    <option value="2">Comida China Express</option>
+                    <option value="3">Panadería Dulce Hogar</option>
+                </select>
+
+                <label for="hora">Hora de recogida</label>
+                <input type="time" name="hora" id="hora" required>
+
+                <br><label for="comentarios">Comentarios adicionales:</label>
+                <textarea id="descripcion" name="descripcion" rows="5" required placeholder="Ej: Sin picante, llevar cambio..."></textarea>
+
+                <input type="submit" value="Reservar">
+            </form>
+        </section>
+
+        <section id="contact">
+            <p>
+                Contacto: foodhero@ejemplo.com | Telefono: +123 456 7890
+            </p>
+            <p>
+                Síguenos en <a href="#">Facebook</a> | <a href="#">Instagram</a>| <a href="#">Twitter</a>
+            </p>
+        </section>
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 FOODHERO - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

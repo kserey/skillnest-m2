@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-title">Perfil</div>
+            <div class="navbar-links">
+                <a href="#">Inicio</a>
+                <a href="#">Mi Perfil</a>
+                <a href="#">Encontrar Conexiones</a>
+                <button class="logout-btn">Cerrar Sesión</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+
+        <!-- COLUMN1 -->
+        <div class="col">
+
+            <!-- CARD1: PROFILE -->
+            <section class="card">
+                <div class="card-header"></div>
+                <div class="profile-photo"></div>
+                <h2 class="profile-name">Linn Olsen</h2>
+                <p>
+                    Bergen, Noruega <br>
+                    Diseñadora de UX/UI | Desarrolladora Frontend | Amante de la naturaleza
+                </p>
+                    
+                <p>
+                    Apasionada por crear experiencias digitales hermosas y funcionales. <br>
+                    Cuando no está codificando, disfruta explorando los fiordos noruegos y capturando la belleza de la naturaleza en fotografías.
+                </p>
+
+                <a class="edit-link" href="#">⚙ Edit profile</a>
+            </section>
+
+            <!-- CARD2: EDUCATION -->
+            <section class="card">
+                <h3>Education</h3>
+                <p>Coding Dojo - Bootcamp de Desarrollo Full Stack
+                    <br>Dic 2019 - Mar 2020
+                    <br>Triple cinturón negro en Python, MERN y C#
+                </p>                
+            </section>
+        </div>
+        
+        <!-- COLUMN2 -->
+        <div class="col">
+
+            <!-- CARD3: REQUEST -->
+            <section class="card">
+                <h3>Solicitudes de conexión (<span id="request-count">2</span>)</h3>
+
+                <div class="request">
+                    <img class="img-request" src="img/kai.jpg" alt="foto perfil Kai">
+                    <span>Kai Schröder</span>
+                    <div class="request-actions">
+                        <button class="accept">✔</button>
+                        <button class="reject">✖</button>
+                    </div>
+                </div>
+
+                <div class="request">
+                    <img class="img-request" src="img/amira.jpg" alt="foto perfil Amira">
+                    <span>Amira El-Masry</span>
+                    <div class="request-actions">
+                        <button class="accept">✔</button>
+                        <button class="reject">✖</button>
+                    </div>
+                </div>
+                
+            </section>
+
+            <!-- CARD4: CONNECTIONS -->
+            <section class="card">
+                <h3>Tus Conexiones (500+)</h3>
+                <ul>
+                <li><img src="img/adrien.jpg" alt="foto perfil Adrien"> Adrien Desplatz</li>
+                <li><img src="img/aarav.jpg" alt="foto perfil Aarav"> Aarav Patel</li>
+                <li><img src="img/lina.jpg" alt="foto perfil Lina"> Lina Kovačević</li>
+                <li><img src="img/mateo.jpg" alt="foto perfil Mateo"> Mateo Hernández</li>
+                <li><img src="img/yuna.jpg" alt="foto perfil Yuna"> Yuna Kim</li>
+                <li><img src="img/liam.jpg" alt="foto perfil Liam"> Liam O'Brien</li>
+                </ul>
+            </section>
+
+        </div>
+               
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <!-- SCRIPT TO ACCEPT/REJECT REQUESTS -->
+
+    <script>
+        // MODIFY THE COUNTER
+        document.addEventListener('DOMContentLoaded', function () {
+            let requests = document.querySelectorAll('.card')[2];
+            let totalRequests = document.getElementById('request-count');
+
+            function updateRequestCounter() {
+                let remainingRequests = requests.querySelectorAll('.request');
+                let count = remainingRequests.length;
+
+                totalRequests.textContent = count;
+
+                if (count === 0) {
+                    requests.style.display = 'none';
+                }
+            }
+
+            // INTERACT WITH BUTTONS => DELETE REQUEST
+            let acceptButtons = document.querySelectorAll('.accept');
+            let rejectButtons = document.querySelectorAll('.reject');
+
+            [...acceptButtons, ...rejectButtons].forEach(button => {
+                button.addEventListener('click', function () {
+                    let requestElement = this.closest('.request');
+                    if (requestElement) {
+                        requestElement.remove();
+                        updateRequestCounter();
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
